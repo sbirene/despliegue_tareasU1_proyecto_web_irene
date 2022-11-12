@@ -1,0 +1,151 @@
+/* colored de la página */
+:root {
+    --azul: #4d68d1;
+    --azul_claro: #2bd5fb;
+    --azul_medio: #22a1e8;
+    --morado_claro: #d1ceeb;
+    --gris_claro: #f5f3f7;
+    --letra: #796c78;
+}
+
+/* tipografía y sus estilos */
+body {
+    font-family: "Montserrat", "Poppins", "Courier New", monospace;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+
+/*  */
+body {
+    margin: 0;
+}
+
+/* Logo */
+.logo {
+    width: fit-content;
+    margin: 1% auto;
+}
+
+#logo {
+    width: 115px;
+}
+
+/* Menú horizontal */
+.menu {
+    background-color: var(--azul);
+    padding: 0 3%;
+    position: sticky; /* para que siempre se vea el menú */
+    top: 0;
+}
+
+ul.horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--azul);
+}
+
+ul.horizontal li {
+    float: left;
+}
+
+ul.horizontal li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.horizontal li a:hover {
+    background-color: var(--azul_medio);
+}
+
+/* Cuando se haga click en un enlace del menú */
+ul.horizontal li a:active {
+    background-color: white;
+    color: var(--letra) !important;
+}
+
+/* Página 80% ancho y centrada */
+.contenido {
+    width: 80%;
+    margin: auto;
+}
+
+/* Dos columnas */
+.dos_columnas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.columna {
+    width: 45%;
+}
+
+.columna.izq {
+    margin-right: 2%;
+}
+
+.columna.der {
+    margin-left: 2%;
+}
+
+/* Bordear el contenido */
+.contenido_bordeado {
+    border: 2px solid var(--azul);
+    padding: 0 1%;
+}
+
+/* Enlaces a otras páginas */
+.boton {
+    background-color: var(--morado_claro);
+    color: var(--letra);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: white;
+    color: var(--azul_claro);
+    /*font-weight: bold;*/
+}
+
+/* Películas y series */
+.peli {
+    margin-bottom: 25px;
+}
+
+.peli img {
+    max-width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.peli h4 {
+    margin-bottom: 5px;
+}
+
+.peli p,
+.peli .lista_actores {
+    margin-top: 0;
+}
+
+/* Sobre el proyecto */
+.tareas h4 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.soluciones img {
+    width: 80%;
+}
